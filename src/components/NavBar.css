@@ -1,0 +1,28 @@
+.navbar {
+  padding-top: 0 !important;
+}
+
+.row {
+  width: 100% !important;
+}
+
+.main-title:hover {
+  cursor: default;
+}
+
+.dropdown-toggler:hover {
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  margin-left: 4em;
+  margin-right: 1em;
+}
+
+.light-dropdown-item:hover {
+  background-color: #d3edfc !important;
+}
+
+.dark-dropdown-item:hover {
+  background-color: #012a58 !important;
+}

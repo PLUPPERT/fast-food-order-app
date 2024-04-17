@@ -1,8 +1,47 @@
 .card {
+  display: block;
   border: none;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  min-width: 30vw;
-  max-width: 30vw;
-  max-height: 100vh;
-  min-height: 80vh;
+}
+
+.image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.card-title {
+  cursor: default;
+}
+
+.dropdown-toggle {
+  background-color: transparent;
+  color: black;
+  border: none;
+}
+
+.dropdown-toggle:hover {
+  background-color: transparent;
+  color: blue;
+}
+
+.dropdown-toggle:active:hover {
+  background-color: transparent;
+  color: blue;
+}
+
+.dropdown-toggle:focus-within {
+  background-color: transparent;
+  color: blue;
+}
+
+.dropdown-toggle:not(:focus) {
+  background-color: transparent;
+  color: black;
+  border: none;
+}
+
+.dropdown-toggle:not(:focus-within) {
+  background-color: transparent;
+  border: none;
 }

@@ -35,7 +35,7 @@ export const menuData = [
     price: 6.39,
   },
   {
-    title: "Imposter Hot Dog Meal",
+    title: "Imposter Hot Dog",
     content: ["Hot Dog", "Medium Fries", "Medium Soda"],
     image: "tray-with-fast-food.png",
     price: 5.39,

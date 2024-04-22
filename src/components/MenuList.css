@@ -1,60 +1,3 @@
-.card {
-  display: block;
-  border: none;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.card-title {
-  cursor: default;
-}
-
-.dropdown-toggle {
-  background-color: transparent;
-  color: black;
-  border: none;
-}
-
-.dropdown-toggle:hover {
-  background-color: transparent;
-  color: blue;
-  border: none;
-}
-
-.dropdown-toggle:hover:not(:active) {
-  background-color: transparent;
-  color: blue;
-  border: none;
-}
-
-.dropdown-toggle:active:hover {
-  background-color: transparent;
-  color: blue;
-  border: none;
-}
-
-.dropdown-toggle:focus-within {
-  background-color: transparent;
-  color: blue;
-  border: none;
-}
-
-.dropdown-toggle:not(:focus) {
-  background-color: transparent;
-  color: black;
-  border: none;
-}
-
-.dropdown-toggle:not(:focus-within) {
-  background-color: transparent;
-  border: none;
-}
-
 .carousel-container {
   width: 100%;
   display: flex;
@@ -119,4 +62,65 @@
 
 .right-arrow {
   right: 24px;
+}
+
+.card {
+  display: block;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.card-title {
+  cursor: default;
+}
+
+.dropdown-toggle {
+  background-color: transparent;
+  color: black;
+  border: none;
+}
+
+.dropdown-toggle:hover {
+  background-color: transparent;
+  color: blue;
+  border: none;
+}
+
+.dropdown-toggle:hover:not(:active) {
+  background-color: transparent;
+  color: blue;
+  border: none;
+}
+
+.dropdown-toggle:active:hover {
+  background-color: transparent;
+  color: blue;
+  border: none;
+}
+
+.dropdown-toggle:focus-within {
+  background-color: transparent;
+  color: blue;
+  border: none;
+}
+
+.dropdown-toggle:not(:focus) {
+  background-color: transparent;
+  color: black;
+  border: none;
+}
+
+.dropdown-toggle:not(:focus-within) {
+  background-color: transparent;
+  border: none;
+}
+
+.dropdown-menu {
+  background-color: rgb(255, 241, 207);
 }

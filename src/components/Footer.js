@@ -4,6 +4,8 @@ import { Card, CardTitle, Col, Container, Row } from "react-bootstrap";
 import "./Footer.css";
 
 const Footer = (props) => {
+  var { updateOrder, resetOrder, totalPrice, orderList, prices } = props;
+
   return (
     <div className="footer-div">
       <footer className="app-footer bg-info py-3">
@@ -14,13 +16,15 @@ const Footer = (props) => {
           <Card className="order-card py-2 px-3">
             {/* map products here */}
             <Row>
-              <Col>product</Col>
+              <Col>Taco Terrific x {orderList["Taco Terrific"]}</Col>
               <Col className="text-center">Buttons</Col>
-              <Col className="text-end">Price</Col>
+              <Col className="text-end">
+                {prices[1] * orderList["Taco Terrific"]}
+              </Col>
             </Row>
             <Row>
               <Col>Total:</Col>
-              <Col className="text-end">SEK XXX.xx</Col>
+              <Col className="text-end">SEK {totalPrice}</Col>
             </Row>
           </Card>
         </Container>

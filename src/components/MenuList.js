@@ -77,7 +77,7 @@ const MenuListCarousel = (props) => {
                       </Card.Title>
                       <Dropdown className="text-center" drop="down-centered">
                         <Dropdown.Toggle>Meal Contains:</Dropdown.Toggle>
-                        <Dropdown.Menu flip={false}>
+                        <Dropdown.Menu flip={true}>
                           {meal.content.map((item) => {
                             const mealItem = (
                               <Dropdown.Item disabled className="text-dark">

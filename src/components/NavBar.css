@@ -15,8 +15,8 @@
 }
 
 .dropdown-menu {
-  margin-left: 4em;
-  margin-right: 1em;
+  left: auto;
+  right: 0;
 }
 
 .light-dropdown-item:hover {

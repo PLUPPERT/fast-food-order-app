@@ -63,54 +63,57 @@ const MenuListCarousel = (props) => {
           >
             {data.map((meal) => {
               const cardElement = (
-                <div>
-                  <Card className="mt-2 mb-3 mx-2">
-                    <Image
-                      className="card-img-top"
-                      src={meal.image}
-                      alt={meal.title}
-                      height={350}
-                    />
-                    <Card.Body className="pb-2">
-                      <Card.Title className="text-center">
-                        {meal.title}
-                      </Card.Title>
-                      <Dropdown className="text-center" drop="down-centered">
-                        <Dropdown.Toggle>Meal Contains:</Dropdown.Toggle>
-                        <Dropdown.Menu flip={true}>
-                          {meal.content.map((item) => {
-                            const mealItem = (
-                              <Dropdown.Item disabled className="text-dark">
-                                <p>- {item}</p>
-                              </Dropdown.Item>
-                            );
-                            return mealItem;
-                          })}
-                        </Dropdown.Menu>
-                      </Dropdown>
-                      <Card.Text
-                        style={{ cursor: "default" }}
-                        className="text-end pe-2 fw-bold"
+                <Card className="meal-card">
+                  <Image
+                    className="meal-card-image card-img-top"
+                    src={meal.image}
+                    alt={meal.title}
+                    height={350}
+                  />
+                  <Card.Body className="meal-card-body">
+                    <Card.Title className="meal-card-title text-center">
+                      {meal.title}
+                    </Card.Title>
+                    <Dropdown className="text-center" drop="down-centered">
+                      <Dropdown.Toggle className="meal-card-dropdown-toggle">
+                        Meal Contains:
+                      </Dropdown.Toggle>
+                      <Dropdown.Menu
+                        className="meal-card-dropdown-menu"
+                        flip={true}
                       >
-                        ${meal.price}
-                      </Card.Text>
-                      <Container
-                        className="bg-light py-2 d-flex justify-content-center"
-                        style={{
-                          boxShadow: "0px -2px 0px rgba(0, 0, 0, 0.1)",
-                        }}
+                        {meal.content.map((item) => {
+                          const mealItem = (
+                            <Dropdown.Item disabled className="text-dark">
+                              <p>- {item}</p>
+                            </Dropdown.Item>
+                          );
+                          return mealItem;
+                        })}
+                      </Dropdown.Menu>
+                    </Dropdown>
+                    <Card.Text
+                      style={{ cursor: "default" }}
+                      className="text-end pe-2 fw-bold"
+                    >
+                      ${meal.price}
+                    </Card.Text>
+                    <Container
+                      className="bg-light py-2 d-flex justify-content-center"
+                      style={{
+                        boxShadow: "0px -2px 0px rgba(0, 0, 0, 0.1)",
+                      }}
+                    >
+                      <Button
+                        variant="info"
+                        className="text-light"
+                        onClick={() => alert(meal.price)}
                       >
-                        <Button
-                          variant="info"
-                          className="text-light"
-                          onClick={() => alert(meal.price)}
-                        >
-                          Add to Order
-                        </Button>
-                      </Container>
-                    </Card.Body>
-                  </Card>
-                </div>
+                        Add to Order
+                      </Button>
+                    </Container>
+                  </Card.Body>
+                </Card>
               );
               return cardElement;
             })}

@@ -69,7 +69,7 @@ function App() {
   const logo = "logo.png";
 
   return (
-    <Container fluid>
+    <Container fluid className="main-container">
       <NavBar logo={logo} />
       <MenuList data={menuData} show={3} />
       <Footer

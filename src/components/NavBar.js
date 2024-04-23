@@ -10,7 +10,7 @@ const NavBar = (props) => {
   return (
     <Navbar>
       <Container fluid className="bg-info">
-        <Row className="pt-2 pb-3">
+        <Row className="nav-row pt-2 pb-3">
           <Col md={2} sm={4}>
             <a href="#Home">
               <img
@@ -32,7 +32,7 @@ const NavBar = (props) => {
                 size={35}
                 className="dropdown-toggler text-end"
               />
-              <Dropdown.Menu className="dropdown-menu bg-secondary">
+              <Dropdown.Menu className="nav-dropdown-menu bg-secondary">
                 <Dropdown.Item
                   href="#/action-1"
                   className="light-dropdown-item bg-light"

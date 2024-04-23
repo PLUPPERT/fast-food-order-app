@@ -1,9 +1,11 @@
 .navbar {
+  width: 100%;
   padding-top: 0 !important;
 }
 
-.row {
+.nav-row {
   width: 100% !important;
+  max-width: 100%;
 }
 
 .main-title:hover {
@@ -14,7 +16,7 @@
   cursor: pointer;
 }
 
-.dropdown-menu {
+.nav-dropdown-menu {
   left: auto;
   right: 0;
 }

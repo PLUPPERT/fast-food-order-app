@@ -73,6 +73,9 @@
 
 .meal-card-image {
   max-height: 65%;
+  /* display: block;
+  width: 100%;
+  height: auto; */
 }
 
 .meal-card-title {

@@ -15,3 +15,47 @@
 
 /* .order-card {
 } */
+
+.amount-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: -0.2em;
+}
+
+.minus-btn {
+  margin-right: 0.1em;
+  width: 40px;
+  height: 35px;
+  background-color: red;
+  font-weight: bolder;
+  font-size: large;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.minus-btn:hover {
+  background-color: rgb(252, 80, 80);
+}
+
+.minus-btn:active:hover {
+  background-color: rgb(167, 2, 2);
+}
+
+.plus-btn {
+  margin-left: 0.1em;
+  width: 40px;
+  height: 35px;
+  background-color: rgb(68, 250, 68);
+  font-weight: bolder;
+  font-size: large;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.plus-btn:hover {
+  background-color: rgb(114, 252, 1);
+}
+
+.plus-btn:active:hover {
+  background-color: rgb(58, 194, 4);
+}

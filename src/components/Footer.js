@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardTitle, Col, Container, Row } from "react-bootstrap";
+import { Button, Card, CardTitle, Col, Container, Row } from "react-bootstrap";
 
 import "./Footer.css";
 
@@ -15,9 +15,12 @@ const Footer = (props) => {
         <Card className="order-card py-2 px-3">
           {/* map products here */}
           <Row>
-            <Col>Taco Terrific x {orderList["Taco Terrific"]}</Col>
-            <Col className="text-center">Buttons</Col>
-            <Col className="text-end">
+            <Col md={5}>Taco Terrific x {orderList["Taco Terrific"]}</Col>
+            <Col md={2} className="amount-buttons text-center">
+              <Button className="minus-btn">-</Button>
+              <Button className="plus-btn">+</Button>
+            </Col>
+            <Col md={5} className="text-end">
               {prices[1] * orderList["Taco Terrific"]}
             </Col>
           </Row>

@@ -25,21 +25,34 @@ const Footer = (props) => {
             </Col>
           </Row>
           {/* map products here */}
-          <Row>
-            <Col md={4}>Taco Terrific</Col>
+          <Row className="mb-3">
+            <Col md={4} className="align-order-row">
+              Taco Terrific
+            </Col>
             <Col md={4} className="amount-buttons">
               <Button className="minus-btn">-</Button>
               <p className="item-amount">{orderList["Taco Terrific"]}</p>
               <Button className="plus-btn">+</Button>
             </Col>
-            <Col md={1} className="text-end">
+            <Col md={1} className="col-text-end align-order-row">
               {prices[1]}
             </Col>
-            <Col md={{ span: 1, offset: 1 }} className="text-end">
+            <Col
+              md={{ span: 1, offset: 1 }}
+              className="col-text-end align-order-row"
+            >
               {prices[1] * orderList["Taco Terrific"]}
             </Col>
-            <Col md={1} className="text-center">
-              X
+            <Col md={1} className="delete-btn-col">
+              <Button className="delete-btn">
+                <img
+                  className="delete-btn-img"
+                  src="litter.png"
+                  width={20}
+                  height={20}
+                  alt="litter.png"
+                />
+              </Button>
             </Col>
           </Row>
           <Row className="mt-1">
@@ -48,6 +61,10 @@ const Footer = (props) => {
             </Col>
           </Row>
         </Card>
+        <div className="bottom-btn-div mt-2">
+          <Button className="btn-danger me-4">CANCEL</Button>
+          <Button className="btn-success">SUBMIT</Button>
+        </div>
       </Container>
     </div>
   );

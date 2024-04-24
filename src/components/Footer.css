@@ -25,12 +25,21 @@
   font-weight: bold;
 }
 
+.align-order-row {
+  display: flex;
+  align-items: center;
+}
+
 .amount-buttons {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   margin-top: -0.2em;
+}
+
+.col-text-end {
+  justify-content: end;
 }
 
 .item-amount {
@@ -80,6 +89,35 @@
   background-color: rgb(58, 194, 4);
 }
 
+.delete-btn-col {
+  display: flex;
+  justify-content: center;
+}
+
+.delete-btn {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  height: fit-content;
+}
+
+.delete-btn:hover {
+  background-color: rgba(220, 20, 60, 0.199);
+}
+
+.delete-btn:hover:active {
+  background-color: rgba(220, 20, 60, 0.514);
+}
+
+.delete-btn-img {
+  margin-top: 3px;
+}
+
 .order-total-sum {
   font-weight: bolder;
+}
+
+.bottom-btn-div {
+  display: flex;
+  justify-content: end;
 }

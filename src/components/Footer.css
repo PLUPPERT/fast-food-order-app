@@ -13,19 +13,38 @@
   border-radius: 5px;
 }
 
-/* .order-card {
-} */
+.product-title {
+  font-weight: bold;
+}
+
+.price-title {
+  font-weight: bold;
+}
+
+.total-title {
+  font-weight: bold;
+}
 
 .amount-buttons {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
   margin-top: -0.2em;
+}
+
+.item-amount {
+  font-size: large;
+  margin: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .minus-btn {
   margin-right: 0.1em;
   width: 40px;
   height: 35px;
+  line-height: 23px;
   background-color: red;
   font-weight: bolder;
   font-size: large;
@@ -45,6 +64,7 @@
   margin-left: 0.1em;
   width: 40px;
   height: 35px;
+  line-height: 24px;
   background-color: rgb(68, 250, 68);
   font-weight: bolder;
   font-size: large;
@@ -58,4 +78,8 @@
 
 .plus-btn:active:hover {
   background-color: rgb(58, 194, 4);
+}
+
+.order-total-sum {
+  font-weight: bolder;
 }

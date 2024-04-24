@@ -13,20 +13,39 @@ const Footer = (props) => {
           Your Order:
         </CardTitle>
         <Card className="order-card py-2 px-3">
-          {/* map products here */}
           <Row>
-            <Col md={5}>Taco Terrific x {orderList["Taco Terrific"]}</Col>
-            <Col md={2} className="amount-buttons text-center">
-              <Button className="minus-btn">-</Button>
-              <Button className="plus-btn">+</Button>
+            <Col md={2} className="product-title">
+              Product:
             </Col>
-            <Col md={5} className="text-end">
-              {prices[1] * orderList["Taco Terrific"]}
+            <Col md={{ span: 1, offset: 6 }} className="price-title text-end">
+              Price:
+            </Col>
+            <Col md={{ span: 1, offset: 1 }} className="total-title text-end">
+              Total:
             </Col>
           </Row>
+          {/* map products here */}
           <Row>
-            <Col>Total:</Col>
-            <Col className="text-end">SEK {totalPrice}</Col>
+            <Col md={4}>Taco Terrific</Col>
+            <Col md={4} className="amount-buttons">
+              <Button className="minus-btn">-</Button>
+              <p className="item-amount">{orderList["Taco Terrific"]}</p>
+              <Button className="plus-btn">+</Button>
+            </Col>
+            <Col md={1} className="text-end">
+              {prices[1]}
+            </Col>
+            <Col md={{ span: 1, offset: 1 }} className="text-end">
+              {prices[1] * orderList["Taco Terrific"]}
+            </Col>
+            <Col md={1} className="text-center">
+              X
+            </Col>
+          </Row>
+          <Row className="mt-1">
+            <Col md={11} className="order-total-sum text-end">
+              SEK {totalPrice}
+            </Col>
           </Row>
         </Card>
       </Container>
